@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Process script">cd65c38edb51130071ebd7a0cf96194a</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Process scripts</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_210020_processin_process_script</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_210020_processin.process_script_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-07 21:13:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c165c38edb51130071ebd7a0cf96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Process scripts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Processing" source="x_210020_processin">f2a34f06db51130071ebd7a0cf96199a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Processing">f2a34f06db51130071ebd7a0cf96199a</sys_scope>
+        <sys_update_name>sys_app_module_c165c38edb51130071ebd7a0cf96194d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-07 21:13:45</sys_updated_on>
+        <timeline_page/>
+        <title>Process scripts</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

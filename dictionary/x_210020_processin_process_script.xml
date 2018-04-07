@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_210020_processin_process" label="Process script" max_length="40" name="x_210020_processin_process_script" type="collection"/>
+</database>
