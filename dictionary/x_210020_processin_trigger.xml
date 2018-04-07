@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Trigger" max_length="40" name="x_210020_processin_trigger" type="collection"/>
+    <element label="Trigger" max_length="40" name="x_210020_processin_trigger" type="collection">
+        <element display="true" label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Process" max_length="32" name="process" reference="x_210020_processin_process" reference_qual="u_active=true" reference_qual_condition="u_active=true" type="reference"/>
+        <element label="Short Description" max_length="100" name="short_description" type="script"/>
+        <element label="Trigger Condition" max_length="4000" name="trigger_condition" type="conditions"/>
+        <index name="index">
+            <element name="process"/>
+        </index>
+    </element>
 </database>

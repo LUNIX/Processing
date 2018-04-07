@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Run" max_length="40" name="x_210020_processin_run" type="collection"/>
+    <element label="Run" max_length="40" name="x_210020_processin_run" type="collection">
+        <element label="Process" max_length="32" name="process" reference="x_210020_processin_process" reference_qual="u_active=true" reference_qual_condition="u_active=true" type="reference"/>
+        <element label="Result" max_length="1000" name="result" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Complete" value="3"/>
+                <element label="In Progress" value="2"/>
+                <element label="New" value="0"/>
+                <element label="Pending" value="1"/>
+            </choice>
+        </element>
+        <element label="Trigger" max_length="32" name="trigger" reference="x_210020_processin_trigger" type="reference"/>
+        <index name="index">
+            <element name="process"/>
+        </index>
+        <index name="index2">
+            <element name="trigger"/>
+        </index>
+    </element>
 </database>

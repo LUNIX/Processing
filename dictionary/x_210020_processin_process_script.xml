@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_210020_processin_process" label="Process script" max_length="40" name="x_210020_processin_process_script" type="collection"/>
+    <element extends="x_210020_processin_process" label="Process script" max_length="40" name="x_210020_processin_process_script" type="collection">
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Process" max_length="32" name="process" reference="x_210020_processin_process" reference_qual="u_active=true" reference_qual_condition="u_active=true" type="reference"/>
+        <element label="Script" max_length="20000" name="script" type="script_plain"/>
+        <element label="Short Description" max_length="500" name="short_description" type="string"/>
+        <index name="index">
+            <element name="process"/>
+        </index>
+    </element>
 </database>
